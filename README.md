@@ -1,80 +1,114 @@
 🌱 AgroSmart — Crop Recommendation System
+
 AgroSmart is a machine learning–driven web application that recommends the most suitable crops based on soil nutrients and environmental conditions.
 
-⚠️ This system is designed for decision support, not guaranteed predictions.
+⚠️ Disclaimer: This system is designed for decision support and educational purposes only. Recommendations are not guaranteed predictions.
 
 🚀 Live Demo
-<p align="center">
-  <a href="https://agrosmart-iota.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀%20Launch%20AgroSmart-Live%20Demo-28a745?style=for-the-badge&logo=vercel" />
-  </a>
-</p>
+<p align="center"> <a href="https://agrosmart-iota.vercel.app/" target="_blank"> <img src="https://img.shields.io/badge/🚀%20Launch%20AgroSmart-Live%20Demo-28a745?style=for-the-badge&logo=vercel" /> </a> </p>
+📖 Overview
 
-🧠 Overview
-Choosing the right crop is a multi-variable problem involving soil chemistry and climate factors. AgroSmart solves this by applying a trained ML model to provide data-driven crop recommendations in real time.
+Choosing the right crop depends on multiple environmental and soil-related factors such as nutrient composition, temperature, humidity, rainfall, and pH level.
 
-🛠 Tech Stack
-Frontend: React (UI + data input)
-Backend: Spring Boot (REST API, validation layer)
-ML Service: Python (scikit-learn, pandas, NumPy)
-Dataset: CSV-based agricultural dataset
+AgroSmart simplifies this process using a trained Machine Learning model that analyzes agricultural parameters and provides intelligent crop recommendations in real time.
+
+The system follows a modular architecture:
+
+Frontend → User Interface & Data Collection
+Backend → API & Validation Layer
+ML Service → Prediction Engine
+🛠️ Tech Stack
+Technology	Purpose
+React	Frontend UI
+Spring Boot	Backend REST API
+Python	Machine Learning Service
+scikit-learn	ML Model Training
+pandas & NumPy	Data Processing
+CSV Dataset	Agricultural Training Data
 ⚙️ Features
-Input parameters:
-
-Nitrogen (N), Phosphorus (P), Potassium (K)
-Temperature, Humidity
-pH Level, Rainfall
-Ranked crop recommendations
-
-Input validation for realistic values
-
-Clean and responsive UI
-
-Modular architecture (Frontend ↔ Backend ↔ ML Service)
-
+🌾 Crop Recommendation
+Predicts suitable crops based on:
+Nitrogen (N)
+Phosphorus (P)
+Potassium (K)
+Temperature
+Humidity
+pH Level
+Rainfall
+📊 Ranked Predictions
+Returns probability-based / ranked crop suggestions
+✅ Input Validation
+Prevents unrealistic or invalid values
+🎨 Responsive UI
+Clean and user-friendly interface
+🧩 Modular Architecture
+Independent frontend, backend, and ML services
 🔄 System Workflow
-User inputs soil and climate data
-React frontend sends request to backend
-Spring Boot validates and forwards data
-Python ML service processes input
-Ranked crop results returned to user
+User Input
+    ↓
+React Frontend
+    ↓
+Spring Boot Backend
+    ↓
+Python ML Service
+    ↓
+Prediction Generation
+    ↓
+Ranked Crop Recommendations
 📂 Project Structure
 AgroSmart/
-│── Frontend/        # React application
-│── Backend/         # Spring Boot API
-│── ML_Service/      # Python ML model
-│── dataset/         # CSV dataset
-🧪 Machine Learning Approach
-Supervised learning model trained on agricultural dataset
+│
+├── Frontend/        # React application
+├── Backend/         # Spring Boot REST API
+├── ML_Service/      # Python ML model & prediction logic
+├── dataset/         # Agricultural CSV dataset
+└── README.md
+🧠 Machine Learning Approach
+📌 Model Type
 
-Features used:
+Supervised Machine Learning
 
-Soil nutrients (NPK)
-Environmental conditions
-Output: probability-based / ranked crop predictions
-
+📌 Features Used
+Soil Nutrients (NPK)
+Temperature
+Humidity
+pH Level
+Rainfall
+📌 Output
+Crop prediction
+Ranked recommendation probabilities
 ⚡ Setup Instructions
-1️⃣ Frontend
+1️⃣ Frontend Setup
 cd Frontend
 npm install
 npm run dev
-2️⃣ Backend
+2️⃣ Backend Setup
 cd Backend
 mvn spring-boot:run
-3️⃣ ML Service
+3️⃣ ML Service Setup
 cd ML_Service
+
 python -m venv .venv
-.venv\Scripts\activate   # Windows
+
+# Activate Virtual Environment (Windows)
+.venv\Scripts\activate
+
 pip install -r requirements.txt
+
 python crop.py
 📌 Limitations
 Dependent on dataset quality
 No real-time weather integration
-Does not consider pests, diseases, or market demand
+Does not consider:
+Pests
+Plant diseases
+Market demand
+Predictions may vary based on environmental changes
 🔮 Future Improvements
-Real-time weather API integration
-Fertilizer recommendation system
-Scalable ML deployment (Docker / cloud)
-Larger and more diverse dataset
+🌦️ Real-time weather API integration
+🌱 Fertilizer recommendation system
+☁️ Docker & cloud deployment
+📈 Larger and more diverse dataset
+📱 Mobile-friendly optimization
 👨‍💻 Author
 Savan Patel
