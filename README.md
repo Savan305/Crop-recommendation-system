@@ -195,7 +195,7 @@ python crop.py
 
 Machine Learning & Full Stack Developer
 
----
+--
 
 # ⭐ Support
 
