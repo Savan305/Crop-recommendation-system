@@ -4,7 +4,7 @@ AgroSmart is a machine learning–driven web application that recommends the mos
 
 > ⚠️ **Disclaimer:** This system is designed for decision support and educational purposes only. Recommendations are not guaranteed predictions.
 
----
+--
 
 # 🚀 Live Demo
 
